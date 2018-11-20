@@ -2,14 +2,18 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
-  render() {
-    return (
+   state = {
+      myState: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, used do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+      culpa qui officia deserunt mollit anim id est laborum.'
+   }
+   render() {
+      return (
       <View>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Happy to be here!</Text>
-        <Text>Changes made to the App.js file will be automcatically</Text>
-        <Text>Shake the phone to open developer menu</Text>
+         <Text> {this.state.myState} </Text>
       </View>
-    );
-  }
-}
+      );
+   }
